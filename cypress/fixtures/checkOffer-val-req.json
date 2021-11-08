@@ -1,0 +1,244 @@
+{
+    "offer": {
+        "uid": "BTO9DTRUL3",
+        "link": "booking-code=BED-C9BB&operator=TUES&board=GT06-BB&from=2022-01-13&city=321401&provider=Hotelbeds&ref=giata%3A267013&duration=1&region=10245936&country=PT&adults=1&room=ST04-SH",
+        "signature": {
+            "booking-code": "BED-C9BB",
+            "operator": "TUES",
+            "board": "GT06-BB",
+            "from": "2022-01-13",
+            "city": "321401",
+            "provider": "Hotelbeds",
+            "ref": "giata:267013",
+            "duration": "1",
+            "region": "10245936",
+            "country": "PT",
+            "adults": 1,
+            "room": "ST04-SH"
+        },
+        "items": [
+            {
+                "itemRef": 1,
+                "productType": "hotel",
+                "caption": "The Independente Hostel & Suites",
+                "price": {
+                    "currency": "EUR",
+                    "amount": 11.2
+                },
+                "quantity": 1,
+                "product": {
+                    "operator": "TUES",
+                    "references": [
+                        {
+                            "name": "trustyou",
+                            "value": "62249b65-b13f-47c8-8067-5af3c96a4c5b"
+                        },
+                        {
+                            "name": "goal",
+                            "value": "453425",
+                            "ref": "goal:453425"
+                        },
+                        {
+                            "name": "giata",
+                            "value": "267013",
+                            "ref": "giata:267013"
+                        }
+                    ],
+                    "name": "The Independente Hostel & Suites",
+                    "starRating": "1.0",
+                    "provider": "Hotelbeds",
+                    "location": {
+                        "region": {
+                            "code": "10245936",
+                            "label": "Costa de Lisboa"
+                        },
+                        "city": {
+                            "code": "321401",
+                            "label": "Lisboa"
+                        },
+                        "country": {
+                            "code": "PT",
+                            "label": "Portugal"
+                        },
+                        "geo": {
+                            "latitude": "38.714886",
+                            "longitude": "-9.144606"
+                        }
+                    },
+                    "ratings": [
+                        {
+                            "key": "1",
+                            "name": "Rating count",
+                            "value": "611.0"
+                        },
+                        {
+                            "key": "2",
+                            "name": "Average rating",
+                            "value": "89.0"
+                        },
+                        {
+                            "key": "3",
+                            "name": "Score location (all)",
+                            "value": "95.0"
+                        },
+                        {
+                            "key": "4",
+                            "name": "Score food (all)",
+                            "value": "81.0"
+                        },
+                        {
+                            "key": "5",
+                            "name": "Score service (all)",
+                            "value": "94.0"
+                        },
+                        {
+                            "key": "7",
+                            "name": "Score room (all)",
+                            "value": "76.0"
+                        },
+                        {
+                            "key": "13",
+                            "name": "Score location (couple)",
+                            "value": "96.0"
+                        },
+                        {
+                            "key": "15",
+                            "name": "Score service (couple)",
+                            "value": "92.0"
+                        },
+                        {
+                            "key": "17",
+                            "name": "Score room (couple)",
+                            "value": "77.0"
+                        },
+                        {
+                            "key": "23",
+                            "name": "Score location (solo)",
+                            "value": "95.0"
+                        },
+                        {
+                            "key": "24",
+                            "name": "Score food (solo)",
+                            "value": "81.0"
+                        },
+                        {
+                            "key": "25",
+                            "name": "Score service (solo)",
+                            "value": "97.0"
+                        },
+                        {
+                            "key": "27",
+                            "name": "Score room (solo)",
+                            "value": "71.0"
+                        },
+                        {
+                            "key": "28",
+                            "name": "Rating solo",
+                            "value": "89.0"
+                        },
+                        {
+                            "key": "30",
+                            "name": "Rating couple",
+                            "value": "82.0"
+                        }
+                    ],
+                    "attributes": "Beach CityTrips GT03-24RE GT03-AICO GT03-BARR GT03-BEAC GT03-BEAC#ST03-SAND GT03-BUFF#ST03-BREA GT03-BUFF#ST08-BREA GT03-CAPA GT03-CENT GT03-CITR GT03-CORO GT03-CRCA#ST03-MACA GT03-CRCA#ST03-VISA GT03-DIAI GT03-DIFR#ST05-SUWH GT03-ENAC GT03-GARA GT03-INTE GT03-INTE#ST03-WLAN GT03-LIFT GT03-LOBB GT03-LURO GT03-LUXU GT03-PEAL GT03-REST GT03-REST#AT03-HOTE GT03-TELE GT03-TELE#ST03-SATV GT03-TERR GT03-TRSE#ST03-AIRP GT03-TVRO GT03-WHAC HB-073 HB-516 HB-NOR HB-NRF Parking WIFI",
+                    "room": {
+                        "extraBeds": 0,
+                        "bookingCode": "BED-C9BB",
+                        "board": {
+                            "type": "GT06-BB",
+                            "name": "Desayuno",
+                            "opCode": "BB",
+                            "key": "1"
+                        },
+                        "opCode": "BED-C9",
+                        "attributes": "FCP-P15D FCP-RATE GT05-HAIR GT05-HEAT GT05-KETT GT05-NOSM GT05-SMOK",
+                        "type": "ST04-SH",
+                        "description": "Cama en habitación compartida CAPACIDAD 9",
+                        "key": "1"
+                    },
+                    "key": "2223170b-6890-4402-8ab4-59e2ecdb58c5",
+                    "caption": "The Independente Hostel & Suites"
+                },
+                "extraCharges": {
+                    "currency": "EUR",
+                    "amount": 2
+                }
+            }
+        ],
+        "allInPrice": {
+            "currency": "EUR",
+            "amount": 13.2
+        },
+        "totalPrice": {
+            "currency": "EUR",
+            "amount": 11.2
+        },
+        "displayPrice": {
+            "currency": "EUR",
+            "amount": 11.2,
+            "priceType": "totalPrice"
+        },
+        "brand": "TUES",
+        "nearestAirport": "LIS",
+        "extraCharges": {
+            "currency": "EUR",
+            "amount": 2
+        },
+        "return": "2022-01-14",
+        "departure": "2022-01-13",
+        "lengthOfStay": "1",
+        "localSupplier": "HOBHTUES2",
+        "locale": "es_ES",
+        "productCode": "LISD0623",
+        "travellers": {
+            "adults": 1,
+            "children": []
+        },
+        "label": "The Independente Hostel & Suites",
+        "marketIdentifier": "tui-es",
+        "perPerson": {
+            "allInPrice": {
+                "currency": "EUR",
+                "amount": 13.2
+            },
+            "totalPrice": {
+                "currency": "EUR",
+                "amount": 11.2
+            },
+            "displayPrice": {
+                "currency": "EUR",
+                "amount": 11.2
+            },
+            "netPrice": {
+                "currency": "EUR",
+                "amount": 0
+            }
+        }
+    },
+    "summary": {
+        "backUrl": "https://staging.stay.tui.com/es/detail/goal:453425?from=2022-01-13&duration=1&adults=1",
+        "hotelSummary": {
+            "name": "The Independente Hostel & Suites",
+            "rating": {
+                "name": "trustyou",
+                "value": "62249b65-b13f-47c8-8067-5af3c96a4c5b"
+            },
+            "features": [],
+            "rooms": [
+                {
+                    "roomName": "Habitación compartida",
+                    "boardName": "GT06-BB",
+                    "bookingCode": "BED-C9BB"
+                }
+            ],
+            "picture": "http://photos.hotelbeds.com/giata/xl/31/311831/311831a_hb_r_002.jpg"
+        }
+    },
+    "params": {
+        "from": "2022-01-13",
+        "duration": "1",
+        "adults": "1"
+    }
+}
