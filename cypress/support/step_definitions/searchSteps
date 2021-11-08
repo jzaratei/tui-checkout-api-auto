@@ -1,0 +1,52 @@
+/// <reference types="Cypress" />
+
+import { Before, Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
+
+
+And('I search a hotel in {} from {} to {}', (city, dateInit, dateEnd)=>{
+    cy.get("[for='search-text-input-field1']").click({scrollBehavior: false})
+    cy.get("#search-text-input-field1").type("lisboa")
+    //cy.get("[data-qa='destination_search_dialog_cities'] li").first().click()
+    cy.get("[data-qa='destination_search_dialog_cities'] li").each(($el, index, $list) => {
+        const actualCity = $el.text();
+        if(actualCity.includes(city)) {
+            cy.wrap($el).click().debug()
+            cy.log("City " + actualCity + " found!")
+        }
+    })
+    cy.get("#search-text-input-field1").invoke('val').should('not.be.empty')
+    cy.get("#search-text-input-field1").invoke('val').should('include', city)
+    cy.get("[data-qa='date_selection_button']").first().click({force: true})
+
+    let date = new Date()
+    date.setDate(date.getDate())
+    const year = dateInit.split("-")[0]
+    const month = dateInit.split("-")[1]
+    const initDay = dateInit.split("-")[2]
+    const endDay = dateEnd.split("-")[2]
+    const monthLocator = 'calendar_month_' + year + '-' + month
+    cy.get("[class='calendar-month date-selection-calendar__month'][data-qa=" + monthLocator).find(".calendar-month__day-label").each(($day, index, $list) => {
+        let actualDay = $day.text()
+        if (parseInt(actualDay) === parseInt(initDay)){
+            cy.log('Selecting init day ' + actualDay)
+            cy.wrap($day).click()
+        }
+        if (parseInt(actualDay) === parseInt(endDay)){
+            cy.log('Selecting end day ' + actualDay)
+            cy.wrap($day).click()
+            return false
+        }
+    })
+    cy.get("[data-qa='date_selection_button_apply']").click()
+    cy.get("[data-qa='search_submit_button_end_icon_arrow_long']").first().click()
+    //cy.get("[data-menu-item='mobile-filter']").click()
+    //cy.get("[data-qa-label='Precio (ascendente)']").click()
+    //cy.get("[data-qa='offer_tile']", {timeout: 10000}).first().find("[class='offer-tile__price-info'] [data-qa='button']").click()
+    // cy.get("[data-qa='offer_tile']", {timeout: 10000}).first().find("[class='offer-tile__wrapper']").then(function () {
+    //     const href = $a.prop('href')
+    //     cy.visit(href)
+    //     //cy.url().should('include', 'users.html')
+    //   })
+    cy.get("[data-qa='offer_tile']", {timeout: 10000}).first().find("[class='offer-tile__wrapper']").invoke('removeAttr', 'target').click()
+    
+})
